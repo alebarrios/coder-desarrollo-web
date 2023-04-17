@@ -78,6 +78,7 @@ footer {
     width: 400px;
     height: 400px;
     margin-inline: 1rem;
+    margin-block: 1rem;
     padding-inline: 1rem;
     background-color: white;
     border-radius: 10px;
@@ -89,11 +90,12 @@ h1 {
     margin-bottom: 1rem;
 }
 
-#services-container {
+#services-container, #portfolio-container {
     margin-block: 5rem;
+    margin-inline: 1rem;
 }
 
-article div {
+#services-container div {
     margin-block: 2rem;
 }
 
@@ -130,6 +132,45 @@ article div {
 #about-info a{
     display: inline;
     margin-right: 2rem;
+}
+
+#portfolio article {
+    display: inline-block;
+    background-color: white;
+    margin: 1rem;
+    max-width: 400px;
+    height: 300px;
+    border: solid #03045E 1px;
+}
+
+.project-img {
+    height: 70%;
+}
+
+.project-img img{
+    height: 100%;
+    width: 100%;
+}
+
+.project-body h2 {
+    margin-block: 0.25rem;
+}
+
+#top-section, #bottom-section {
+    text-align: center;
+}
+
+.project-body {
+    text-align: left;
+    padding-inline: 0.5rem;
+}
+
+#top-section article {
+    width: 40%;
+}
+
+#bottom-section article {
+    width: 25%;
 }
 
 
