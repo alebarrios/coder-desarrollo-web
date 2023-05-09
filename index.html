@@ -12,9 +12,9 @@
 </head>
 <body>
     <header>
-        <nav id="navbar">
-            <a href="" class="inline"><i class="fa-solid fa-user"></i></a>
-            <ul class="inline">
+        <nav class="navbar">
+            <a href="" class="navbar__logo"><i class="fa-solid fa-user"></i></a>
+            <ul class="navbar__list">
                 <li><a href="./pages/about.html">About</a></li>
                 <li><a href="./pages/services.html">Services</a></li>
                 <li><a href="./pages/portfolio.html">Portfolio</a></li>
@@ -23,21 +23,23 @@
         </nav>
     </header>
     <main>
-        <section id="home">
-            <div id="hero">
-                <p>HI! I'M A</p>
-                <h1>FULLSTACK DEVELOPER</h1>
-                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <section class="hero">
+            <div class="hero__photo">
+                <img class="hero__img" src="./img/mi-proyecto.png" alt="Foto del Developer">
+            </div>
+            <div class="hero__container">
+                <p class="hero__paragraph">HI! I'M A</p>
+                <h1 class="hero__heading1">FULLSTACK DEVELOPER</h1>
+                <h2 class="hero__heading2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <a href="./pages/portfolio.html" class="button center-text bold">VIEW PORTFOLIO</a>
             </div>
         </section>
     </main>
     <footer>
-        <ul class="inline">
-            <li class="inline"><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a></li>
-            <li class="inline"><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>   
-            
-            <li class="inline">Personal Portfolio 2023</li>
+        <ul class="footer">
+            <li class=""><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a></li>
+            <li class=""><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>   
+            <li class="">Personal Portfolio 2023</li>
         </ul>
     </footer>
 </body>
