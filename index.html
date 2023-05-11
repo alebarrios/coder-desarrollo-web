@@ -12,9 +12,9 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <a href="" class="navbar__logo"><i class="fa-solid fa-user"></i></a>
-            <ul class="navbar__list">
+        <nav class="mynavbar">
+            <a href="" class="mynavbar__logo"><i class="fa-solid fa-user"></i></a>
+            <ul class="mynavbar__list">
                 <li><a href="./pages/about.html">About</a></li>
                 <li><a href="./pages/services.html">Services</a></li>
                 <li><a href="./pages/portfolio.html">Portfolio</a></li>
@@ -23,17 +23,20 @@
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <div class="hero__photo">
-                <img class="hero__img" src="./img/mi-proyecto.png" alt="Foto del Developer">
-            </div>
-            <div class="hero__container">
-                <p class="hero__paragraph">HI! I'M A</p>
-                <h1 class="hero__heading1">FULLSTACK DEVELOPER</h1>
-                <h2 class="hero__heading2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a href="./pages/portfolio.html" class="button center-text bold">VIEW PORTFOLIO</a>
-            </div>
-        </section>
+        <div class="container">
+
+            <section class="hero">
+                <div class="hero__photo">
+                    <img class="hero__img" src="./img/mi-proyecto.png" alt="Foto del Developer">
+                </div>
+                <div class="hero__container">
+                    <p class="hero__paragraph">HI! I'M A</p>
+                    <h1 class="hero__heading1">FULLSTACK DEVELOPER</h1>
+                    <h2 class="hero__heading2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="./pages/portfolio.html" class="button center-text bold">VIEW PORTFOLIO</a>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <ul class="footer">
@@ -42,5 +45,6 @@
             <li class="">Personal Portfolio 2023</li>
         </ul>
     </footer>
+    <script src="./js/bootstrap.bundle.js"></script>
 </body>
 </html>
