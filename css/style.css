@@ -30,8 +30,7 @@ main {
 }
 
 
-/* Seccion del Hero */
-
+/* Seccion del Hero del HOME */
 
 .hero {
     text-align: center;
@@ -141,27 +140,9 @@ main {
     font-weight: 700;
 }
 
-.mynavbar__logo{
-    color: inherit;
+.nav-link:hover {
+    font-weight: 700;
 }
-
-.mynavbar__list {
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    list-style-type: none;
-    font-weight: bold;
-}
-
-.mynavbar__list a {
-    text-decoration: none;
-}
-
-
-
-
-
-
 
 /* Seccion del Footer */
 
@@ -188,6 +169,10 @@ main {
 .footer__p {
     margin: 0;
 }
+
+
+
+
 
 #services, #about, #contact {
     width: 100%;
@@ -358,17 +343,12 @@ h1 {
     font-family: 'Montserrat';
 }
 
-
-.center-text {
-    text-align: center;
-}
-
 .inline {
     display: inline;
 }
 
 .bold {
-    font-weight: bold;
+    
 }
 
 .dark-blue {
@@ -377,14 +357,18 @@ h1 {
 
 .button {
     display: inline-block;
-    margin: 4px 2px;
-    padding: 15px 32px;
-    background-color: var(--color-secondary);
+    padding: .75rem 1rem;
     color: white;
-    border-radius: 10px;
+    border-radius: 0.75rem;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 700;
     cursor: pointer;
+    text-align: center;
+}
+
+.button--secondary {
+    background-color: var(--color-secondary);
 }
 
 .button:hover {
