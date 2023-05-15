@@ -1,2 +1,3 @@
 # coder-desarrollo-web
-Pre-Entrega 1
+Pre-Entrega 2
+Pagina HOME y About son responsive
