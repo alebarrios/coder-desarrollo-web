@@ -13,6 +13,7 @@
     --color-secondary: #23967f;
     --color-terciary: #7daf9c;
     --color-cuaternary: #f7bfb4;
+    --color-turquoise: #0077B6;
 }
 
 body {
@@ -170,11 +171,44 @@ main {
     margin: 0;
 }
 
+/* Seccion del About */
+
+.about {
+    overflow: scroll;
+}
+
+.about__img {
+    max-width: 100%;
+    max-height: 600px;
+}
+
+.about__info  { 
+    text-align: center;
+}
+
+.about__buttons a {
+    width: 100%;
+}
+
+.about__buttons a {
+    margin-bottom: 1rem;
+}
+
+@media (min-width : 768px) {
+    .about__info  { 
+        text-align: left;
+    }
+
+    .about__buttons a {
+        width: auto;
+        margin-bottom: 0;
+    }
+}
+
+/* Seccion del Services */
 
 
-
-
-#services, #about, #contact {
+#services, #contact {
     width: 100%;
     height: 970px;
 }
@@ -209,11 +243,6 @@ h1 {
     margin-block: 2rem;
 }
 
-#img-container {
-    display: inline-block;
-    height: 600px;
-    padding-inline: 2rem;
-}
 
 #img-container img{
     height: 600px;
@@ -221,28 +250,7 @@ h1 {
     border-radius: 1rem;
 }
 
-#about-container {
-    margin: 4rem;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-#about-info {
-    display: inline-block;
-    vertical-align: top;
-    height: 600px;
-    padding-inline: 2rem;
-}
-
-#about-info p {
-    padding-block: 2rem;
-    line-height: 2rem;
-}
-
-#about-info a{
-    display: inline;
-    margin-right: 2rem;
-}
+/* Seccion del Portfolio */
 
 #portfolio article {
     display: inline-block;
@@ -282,6 +290,8 @@ h1 {
 #bottom-section article {
     width: 25%;
 }
+
+/* Seccion del Contact */
 
 #contact-container{
     margin-inline: 3rem;
@@ -347,13 +357,12 @@ h1 {
     display: inline;
 }
 
-.bold {
-    
-}
-
 .dark-blue {
     color: #03045E;
 }
+
+
+/* Botones */
 
 .button {
     display: inline-block;
@@ -376,8 +385,8 @@ h1 {
 }
 
 
-.button-turquoise {
-    background-color: #0077B6;
+.button--turquoise {
+    background-color: var(--color-turquoise);
 }
 
 
