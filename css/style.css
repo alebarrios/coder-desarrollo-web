@@ -207,6 +207,9 @@ main {
 
 /* Seccion del Services */
 
+.services {
+    overflow: scroll;
+}
 
 #services, #contact {
     width: 100%;
@@ -225,6 +228,7 @@ main {
     margin-block: 1rem;
     padding-inline: 1rem;
     background-color: white;
+    color: var(--bg-color);
     border-radius: 10px;
     text-align: left;
 }
