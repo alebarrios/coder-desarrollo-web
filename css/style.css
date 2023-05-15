@@ -301,6 +301,10 @@ h1 {
 
 /* Seccion del Contact */
 
+.contact {
+    overflow: scroll;
+}
+
 #contact-container{
     margin-inline: 3rem;
     margin-block: 5rem;
