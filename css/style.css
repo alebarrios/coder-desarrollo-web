@@ -256,9 +256,13 @@ h1 {
 
 /* Seccion del Portfolio */
 
+.portfolio {
+    overflow: scroll;
+}
+
 #portfolio article {
     display: inline-block;
-    background-color: white;
+    background-color: var(--color-cuaternary);
     margin: 1rem;
     max-width: 400px;
     height: 300px;
