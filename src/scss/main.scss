@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;700&display=swap');
-@import url('./bootstrap.css');
+@import url('../vendor/css/bootstrap.css');
 
 *::before,
 *::after,
@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
 }
+
 
 :root {
     --bg-color: #725ebf;
