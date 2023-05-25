@@ -1,21 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;700&display=swap');
+@use 'abstracts' as *;
+@use 'base';
+@use 'layout';
 @import url('../vendor/css/bootstrap.css');
 
-*::before,
-*::after,
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
-:root {
-    --bg-color: #725ebf;
-    --color-secondary: #23967f;
-    --color-terciary: #7daf9c;
-    --color-cuaternary: #f7bfb4;
-    --color-turquoise: #0077B6;
-}
 
 body {
     display: grid;
@@ -23,7 +10,7 @@ body {
     grid-template-columns: 1fr;
     font-family: 'Josefin Sans', sans-serif;
     color: white;
-    background-color: var(--bg-color);
+    background-color: $color-primary;
 }
 
 main {
@@ -59,8 +46,8 @@ main {
 }
 
 .hero__heading1--border {
-    border-bottom: 2px var(--color-cuaternary) solid;
-    color: var(--color-cuaternary);
+    border-bottom: 2px $color-quaternary solid;
+    color: $color-quaternary;
 }
 
 .hero__heading2 {
@@ -89,9 +76,9 @@ main {
 
 @media (min-width : 992px) {
 
-    .navbar-collapse {
-        justify-content: center;
-    }
+    // .navbar-collapse {
+    //     justify-content: center;
+    // }
     .container-fluid {
         display: flex;
         align-items: center;
@@ -114,62 +101,6 @@ main {
     }
 
 
-}
-
-/* Seccion del Nav */
-
-.nav-link,
-.navbar-brand,
-.navbar-toggler,
-.navbar-nav nav-link.active {
-    color: white !important;
-}
-
-.navbar {
-    margin-bottom: 0.5rem;
-    border-bottom: 1px solid white;
-}
-
-.navbar-nav {
-    align-items: center;
-}
-
-.navbar-toggler {
-    border: 1px solid white;
-}
-
-.navbar-brand {
-    font-weight: 700;
-}
-
-.nav-link:hover {
-    font-weight: 700;
-}
-
-/* Seccion del Footer */
-
-.footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    min-height: 5vh;
-    border-top: 1px solid white;
-}
-.footer__social {
-    display: flex;
-    justify-content: center;
-    gap: .5rem;
-    margin: 0;
-}
-
-.footer__social  * {
-    list-style-type: none; 
-    color: white;
-}
-
-.footer__p {
-    margin: 0;
 }
 
 /* Seccion del About */
@@ -229,7 +160,7 @@ main {
     margin-block: 1rem;
     padding-inline: 1rem;
     background-color: white;
-    color: var(--bg-color);
+    color: $color-primary;
     border-radius: 10px;
     text-align: left;
 }
@@ -263,7 +194,7 @@ h1 {
 
 #portfolio article {
     display: inline-block;
-    background-color: var(--color-cuaternary);
+    background-color: $color-quaternary;
     margin: 1rem;
     max-width: 400px;
     height: 300px;
@@ -390,16 +321,16 @@ h1 {
 }
 
 .button--secondary {
-    background-color: var(--color-secondary);
+    background-color: $color-secondary;
 }
 
 .button:hover {
-    background-color: var(--color-terciary);
+    background-color: $color-tertiary;
 }
 
 
 .button--turquoise {
-    background-color: var(--color-turquoise);
+    background-color: $color-turquoise;
 }
 
 

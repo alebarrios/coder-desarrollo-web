@@ -1,0 +1,35 @@
+/* Seccion del Nav */
+
+.nav-link,
+.navbar-brand,
+.navbar-toggler,
+.navbar-nav nav-link.active {
+    color: white !important;
+}
+
+.navbar {
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid white;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.navbar-toggler {
+    border: 1px solid white;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    font-weight: 700;
+}
+
+@media (min-width : 992px) {
+    .navbar-collapse {
+        justify-content: center;
+    }
+}
