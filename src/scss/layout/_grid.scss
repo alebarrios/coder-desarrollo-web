@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    background-color: $color-primary;
+}
+
+main {
+    overflow: hidden;
+    position: relative;
+}

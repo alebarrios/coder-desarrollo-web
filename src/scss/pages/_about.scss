@@ -1,0 +1,33 @@
+@use '../abstracts' as *;
+
+.about {
+    // overflow: scroll;
+}
+
+.about__img {
+    max-width: 100%;
+    max-height: 600px;
+}
+
+.about__info  { 
+    text-align: center;
+}
+
+.about__buttons a {
+    width: 100%;
+}
+
+.about__buttons a {
+    margin-bottom: 1rem;
+}
+
+@media (min-width : 768px) {
+    .about__info  { 
+        text-align: left;
+    }
+
+    .about__buttons a {
+        width: auto;
+        margin-bottom: 0;
+    }
+}

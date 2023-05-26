@@ -1,0 +1,85 @@
+@use '../abstracts' as *;
+
+/* Seccion del Hero del HOME */
+
+.hero {
+    text-align: center;
+}
+
+
+.hero__photo {
+  z-index: -1;
+  position: absolute;
+  width: 90%;
+  bottom: 0;
+  margin-inline: auto;
+}
+
+.hero__img {
+    max-width: 100%;
+}
+
+.hero__heading1 {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero__heading1--border {
+    border-bottom: 2px $color-quaternary solid;
+    color: $color-quaternary;
+}
+
+.hero__heading2 {
+    font-weight: normal;
+}
+
+.hero__paragraph {
+    margin-bottom: 0;
+}
+
+
+@media (min-width : 576px) {
+    .hero { 
+        text-align: left;
+    }
+
+    .hero__photo {
+        left: 25%;
+    }
+
+    .hero__img {
+        height: 120vw;
+    }
+
+}
+
+@media (min-width : 992px) {
+
+    // .navbar-collapse {
+    //     justify-content: center;
+    // }
+    .container-fluid {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    .hero {
+        padding: 2rem;
+    }
+
+    .hero__container {
+        max-width: 60%;
+    }
+    
+    .hero__photo {
+        left: 40%;
+    }
+    .hero__img {
+        max-height: 120vh;
+    }
+
+
+}
