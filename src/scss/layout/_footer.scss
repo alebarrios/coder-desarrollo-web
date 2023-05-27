@@ -1,25 +1,23 @@
-/* Seccion del Footer */
+@use '../abstracts/' as *;
 
 .footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include d-flex(center, center);
     gap: 1rem;
     min-height: 5vh;
-    border-top: 1px solid white;
-}
-.footer__social {
-    display: flex;
-    justify-content: center;
-    gap: .5rem;
-    margin: 0;
-}
+    border-top: 1px solid $color-white;
 
-.footer__social  * {
-    list-style-type: none; 
-    color: white;
-}
-
-.footer__p {
-    margin: 0;
+    &__social {
+        @include d-flex(center, center);
+        gap: .5rem;
+        margin: 0;
+        padding: 0;
+    }
+    
+    &__social  * {
+        color: $color-white;
+    }
+    
+    &__p {
+        margin: 0;
+    }
 }
