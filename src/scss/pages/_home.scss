@@ -4,82 +4,68 @@
 
 .hero {
     text-align: center;
-}
 
-
-.hero__photo {
-  z-index: -1;
-  position: absolute;
-  width: 90%;
-  bottom: 0;
-  margin-inline: auto;
-}
-
-.hero__img {
-    max-width: 100%;
-}
-
-.hero__heading1 {
-    display: inline-block;
-    margin-bottom: 1rem;
-    font-size: 3rem;
-    font-weight: 700;
-}
-
-.hero__heading1--border {
-    border-bottom: 2px $color-quaternary solid;
-    color: $color-quaternary;
-}
-
-.hero__heading2 {
-    font-weight: normal;
-}
-
-.hero__paragraph {
-    margin-bottom: 0;
-}
-
-
-@media (min-width : 576px) {
-    .hero { 
-        text-align: left;
-    }
-
-    .hero__photo {
-        left: 25%;
-    }
-
-    .hero__img {
-        height: 120vw;
-    }
-
-}
-
-@media (min-width : 992px) {
-
-    // .navbar-collapse {
-    //     justify-content: center;
-    // }
-    .container-fluid {
-        display: flex;
-        align-items: center;
-        height: 100%;
-    }
-
-    .hero {
-        padding: 2rem;
-    }
-
-    .hero__container {
-        max-width: 60%;
+    &__heading1 {
+        margin-bottom: 1rem;
+        font-size: 3rem;
+        font-weight: 700;
     }
     
-    .hero__photo {
-        left: 40%;
+    &__heading2 {
+        font-weight: 400;
     }
-    .hero__img {
-        max-height: 120vh;
+    
+    &__heading1--border {
+        border-bottom: 2px $color-quaternary solid;
+        color: $color-quaternary;
+    }
+    
+    &__paragraph {
+        margin-bottom: 0;
+    }
+    
+    &__photo {
+      z-index: -1;
+      position: absolute;
+      bottom: 0;
+    }
+    
+    &__img {
+        width: 100%; 
     }
 
+    @media (min-width : $breakpoint-small) {
+       
+        &__img {
+            max-height: 65vh;
+        }
+    
+    }
+    
+    @media (min-width : $breakpoint-medium) {
+       
+        &__photo {
+            left: 20%;
+        }
+    }
 
+    @media (min-width : $breakpoint-large) {
+    
+        @include d-flex(flex-start, center);
+        height: 100%;
+        text-align: left;
+        padding: 2rem;
+    
+        &__container {
+            max-width: 50%;
+        }
+        
+        &__photo {
+            left: 40%;
+        }
+    
+        &__img {
+            max-height: 97vh;
+        }
+    }
 }
