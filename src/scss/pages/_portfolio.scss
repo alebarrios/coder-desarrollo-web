@@ -1,49 +1,77 @@
 @use '../abstracts' as *;
 
+
+%glass {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .portfolio {
-    overflow: scroll;
-}
 
-#portfolio-container {
-    margin-block: 5rem;
-    margin-inline: 1rem;
-}
-
-#portfolio article {
-    display: inline-block;
-    background-color: $color-quaternary;
-    margin: 1rem;
-    max-width: 400px;
-    height: 300px;
-    border: solid #03045E 1px;
-}
-
-.project-img {
-    height: 70%;
-}
-
-.project-img img{
-    height: 100%;
-    width: 100%;
-}
-
-.project-body h2 {
-    margin-block: 0.25rem;
-}
-
-#top-section, #bottom-section {
     text-align: center;
+    
+    &__container {
+        margin-bottom: 2rem;
+    }
+
+    &__project {
+        overflow: hidden;
+        border-radius: 20px;
+        margin-bottom: 1rem;
+        border: .25rem solid white;
+    }
+
+    &__description {
+        @extend %glass;
+        padding: 1rem;
+    }
+    
+    &__photo img{
+        width: 100%;
+    }
+
 }
 
-.project-body {
-    text-align: left;
-    padding-inline: 0.5rem;
-}
+.carousel {
+    border-radius: 3rem;
+    border: .5rem solid white;
+    overflow: hidden;
 
-#top-section article {
-    width: 40%;
-}
+    .carousel-caption {
+        bottom: 3.5rem;
+        border-radius: 16px;
+        @extend %glass;
+    }
+    
+    .carousel-caption h5 {
+        text-transform: uppercase;
+    }
 
-#bottom-section article {
-    width: 25%;
+    .carousel-item img {
+        object-fit: cover;
+        object-position: center;
+        overflow: hidden;
+        height: 80vh;
+    }
+    
+    .carousel-item::before {
+        content: '';
+        background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.5));
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .carousel-indicators button {
+    
+        background-color: white !important;
+        border-radius: 50%;
+        width: 25px !important;
+        height: 25px !important;
+    }
 }
