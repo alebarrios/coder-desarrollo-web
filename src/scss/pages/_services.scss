@@ -1,0 +1,35 @@
+@use '../abstracts' as *;
+
+.services {
+    
+    @include d-flex(center,center);
+    text-align: center;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        padding-bottom: 1rem;
+    }
+
+    &__card {
+        
+        max-height: 500px;
+        background: linear-gradient(45deg,#FF4D80, #f7bfb4);
+        padding: .5rem;
+        border-radius: 2rem;
+        border: 2px solid white;
+    }
+
+    &__icon {
+        padding-bottom: 1rem;
+    }
+
+    @media (min-width : $breakpoint-small) {
+       
+        &__card {
+            max-width: 400px;
+        }
+    }
+}

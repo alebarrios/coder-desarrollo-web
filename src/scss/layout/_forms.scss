@@ -1,0 +1,51 @@
+@use '../abstracts' as *;
+
+.formx {
+    border: 2px solid white;
+    padding: 30px;
+    background-color: white;
+    color: $color-primary;
+
+    .button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    &__inputBox {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    &__inputBox input,
+    &__inputBox textarea {
+        width: 100%;
+        padding-block: 5px;
+        font-size: calculate-rem(16px);
+        margin-block: 10px;
+        border: none;
+        border-bottom: 2px solid black;
+        outline: none;
+        resize: none;
+    }
+
+    &__inputBox span {
+        position: absolute;
+        left: 0;
+        padding-block: 5px;
+        font-size: calculate-rem(16px);
+        margin-block: 10px;
+        pointer-events: none;
+        transition: .5s;
+    }
+
+    &__inputBox input:focus ~ span,
+    &__inputBox input:valid ~ span,
+    &__inputBox textarea:focus ~ span,
+    &__inputBox textarea:valid ~ span {
+        color: black;
+        font-size: calculate-rem(12px);
+        transform: translateY(-20px);
+    }
+
+}

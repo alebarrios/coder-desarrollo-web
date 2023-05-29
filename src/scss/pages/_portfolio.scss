@@ -1,0 +1,77 @@
+@use '../abstracts' as *;
+
+
+%glass {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.portfolio {
+
+    text-align: center;
+    
+    &__container {
+        margin-bottom: 2rem;
+    }
+
+    &__project {
+        overflow: hidden;
+        border-radius: 20px;
+        margin-bottom: 1rem;
+        border: .25rem solid white;
+    }
+
+    &__description {
+        @extend %glass;
+        padding: 1rem;
+    }
+    
+    &__photo img{
+        width: 100%;
+    }
+
+}
+
+.carousel {
+    border-radius: 3rem;
+    border: .5rem solid white;
+    overflow: hidden;
+
+    .carousel-caption {
+        bottom: 3.5rem;
+        border-radius: 16px;
+        @extend %glass;
+    }
+    
+    .carousel-caption h5 {
+        text-transform: uppercase;
+    }
+
+    .carousel-item img {
+        object-fit: cover;
+        object-position: center;
+        overflow: hidden;
+        height: 80vh;
+    }
+    
+    .carousel-item::before {
+        content: '';
+        background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.5));
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .carousel-indicators button {
+    
+        background-color: white !important;
+        border-radius: 50%;
+        width: 25px !important;
+        height: 25px !important;
+    }
+}

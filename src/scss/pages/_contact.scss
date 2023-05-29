@@ -1,0 +1,47 @@
+@use '../abstracts' as *;
+
+.contact {
+
+    &__section {
+        margin-bottom: 1rem;
+    }
+
+    &__section h1 {
+        margin-bottom: 1rem;
+    }
+    
+    &__info {
+        @include d-flex(center, flex-start);
+        flex-direction: column;
+        gap: .5rem;
+        
+    }
+
+    &__icon {
+        @include d-flex(center, center);
+        min-width: 60px;
+        height: 60px;
+        background: white;
+        color: $color-primary;
+        border-radius: 50%;
+    }
+
+    &__item {
+        @include d-flex(center, center);
+    }
+
+    &__detail {
+        margin-left: 1rem;
+        font-style: italic;
+    }
+
+    &__detail h3{
+        margin-bottom: 0;
+    }
+
+    @media (min-width : $breakpoint-medium) {
+       
+        @include d-flex(center,center);
+    }
+
+}

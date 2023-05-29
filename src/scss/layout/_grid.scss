@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    color: $color-white;
+    background-color: $color-primary;
+}

@@ -1,0 +1,71 @@
+@use '../abstracts' as *;
+
+/* Seccion del Hero del HOME */
+
+.hero {
+    text-align: center;
+
+    &__heading1 {
+        margin-bottom: 1rem;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    
+    &__heading2 {
+        font-weight: 400;
+    }
+    
+    &__heading1--border {
+        border-bottom: 2px $color-quaternary solid;
+        color: $color-quaternary;
+    }
+    
+    &__paragraph {
+        margin-bottom: 0;
+    }
+    
+    &__photo {
+      z-index: -1;
+      position: absolute;
+      bottom: 0;
+    }
+    
+    &__img {
+        width: 100%; 
+    }
+
+    @media (min-width : $breakpoint-small) {
+       
+        &__img {
+            max-height: 65vh;
+        }
+    
+    }
+    
+    @media (min-width : $breakpoint-medium) {
+       
+        &__photo {
+            left: 20%;
+        }
+    }
+
+    @media (min-width : $breakpoint-large) {
+    
+        @include d-flex(flex-start, center);
+        height: 100%;
+        text-align: left;
+        padding: 2rem;
+    
+        &__container {
+            max-width: 50%;
+        }
+        
+        &__photo {
+            left: 40%;
+        }
+    
+        &__img {
+            max-height: 97vh;
+        }
+    }
+}

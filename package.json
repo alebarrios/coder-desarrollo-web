@@ -1,0 +1,24 @@
+{
+  "name": "coder-desarrollo-web",
+  "version": "1.0.0",
+  "description": "Proyecto final del curso Desarrollo Web en Coderhouse",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alebarrios/coder-desarrollo-web.git"
+  },
+  "author": "Ale Barrios",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alebarrios/coder-desarrollo-web/issues"
+  },
+  "homepage": "https://github.com/alebarrios/coder-desarrollo-web#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3"
+  }
+}
