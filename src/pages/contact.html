@@ -39,32 +39,54 @@
         <main class="contact">
             <section class="contact__section container">
                 <div class="row">
-                  <h1 class="text-center">Contact</h1>
-                  <p class="text-center">Lorem ipsum dolor sit amet</p>
+                  <h1 class="text-center">Contact Me</h1>
                 </div>
-                <div class="row">
-                    <div class="contact__form">
-                        <h2>Get in touch</h2>
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name">
-                        <input type="text" placeholder="Email Address">
-                        <textarea name="message" id="form-message" cols="30" rows="5" placeholder="Enter message..."></textarea>
-                        <a href="#" class="button center-text bold">SEND MESSAGE</a>
-                    </div>
-                    <div class="contact__info">
-                      <div>
-                          <i class="fa-solid fa-location-dot fa-4x dark-blue"></i>
+                <div class="row g-4">
+                  <div class="col col-sm-12 col-md-12 col-lg-6 contact__info">
+
+                    <div class="contact__item">
+                      <div class="contact__icon">
+                        <i class="fa-solid fa-location-dot fa-lg dark-blue"></i>
+                      </div>
+                      <div class="contact__detail">
                           <h3>Anaheim, CA, USA</h3>
                       </div>
-                      <div>
-                          <i class="fa-solid fa-mobile fa-4x dark-blue"></i>
+                    </div>
+                    <div class="contact__item">
+                      <div class="contact__icon">
+                        <i class="fa-solid fa-mobile fa-lg dark-blue"></i>
+                      </div>
+                      <div class="contact__detail">
                           <h3>+1 123 3456453</h3>
                       </div>
-                      <div>
-                          <i class="fa-solid fa-envelope fa-4x dark-blue"></i>
-                          <h3>alex_developer@gmail.com</h3>
+                    </div>
+                    <div class="contact__item">
+                      <div class="contact__icon">
+                        <i class="fa-solid fa-envelope fa-lg dark-blue"></i>
+                      </div>
+                      <div class="contact__detail">
+                          <h3>alex_dev@gmail.com</h3>
                       </div>
                     </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                    <form class="formx">
+                      <h3 class="text-center">GET IN TOUCH</h3>
+                      <div class="formx__inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                      </div>
+                      <div class="formx__inputBox">
+                        <input type="text" name="" required="required">
+                        <span>E-mail</span>
+                      </div>
+                      <div class="formx__inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type your message...</span>
+                      </div>
+                      <a href="#" class="button button--secondary">SEND MESSAGE</a>
+                    </form>
+                  </div>
                 </div>
             </section>
           </main>
