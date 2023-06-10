@@ -255,16 +255,18 @@ body {
 .services__container {
   display: flex;
   justify-content: center;
-  gap: 1rem;
   flex-wrap: wrap;
   padding-bottom: 1rem;
 }
 .services__card {
-  max-height: 500px;
+  max-height: 450px;
   background: linear-gradient(45deg, #FF4D80, #f7bfb4);
   padding: 0.5rem;
   border-radius: 2rem;
   border: 2px solid white;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
 }
 .services__icon {
   padding-bottom: 1rem;
